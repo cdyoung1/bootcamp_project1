@@ -1,0 +1,19 @@
+html , body {
+    height:100%;
+    width:100%;
+    margin: 0;
+}
+#section-1{
+    font-family: 'Source Sans Pro';
+    background-color: #f3bf1d;
+    background-image:url(https://blackrockdigital.github.io/startbootstrap-stylish-portfolio/img/bg-masthead.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    height:100%;
+    width:100%; 
+    text-align: center;
+}
+h1{
+    margin:0;
+    padding-top: 300px;
+}
