@@ -43,10 +43,12 @@ h3{
     width:100%; 
     text-align: center;
     color:white;
+    position:relative;
 }
+
 #section-3 h2{
     font-size:2.5em;
-    line-height:0;
+    line-height:0px;
 }
 #section-3 h6{
     font-size:0.8em;
@@ -70,6 +72,30 @@ td{
     padding: 10px 0px 10px 125px;
     line-height: 0;
 }
+#service-icons td{
+    padding:30px 45px 0px 170px;
+
+}
+#responsive{
+    position:absolute;
+    top:238px;
+    left:220px;
+}
+#redesigned{
+    position:absolute;
+    top:238px;
+    left:554px;
+}
+#favorited{
+    position:absolute;
+    top:238px;
+    left:894px;
+}
+#question{
+    position:absolute;
+    top:238px;
+    left:1242px;
+}
 #section-4{
     background-image:url(https://blackrockdigital.github.io/startbootstrap-stylish-portfolio/img/bg-callout.jpg);
     background-size:cover;
@@ -84,9 +110,11 @@ td{
     font-size:2.75em;
 }
 #section-5{
-    height:100%;
+    height:140%;
     width:100%;
     text-align: center;
+    margin:0;
+    border-spacing: 0;
 }
 #section-5 h2{
     font-size:2.5em;
@@ -112,10 +140,21 @@ td{
 }
 .box h5{
     position:absolute;
-    bottom: 40px;
-    left: 60px;
+    bottom: 30px;
+    left: 80px;
     text-align: left;
     color: white;
+    font-size:1em;
+    font-weight:100;
+}
+.box h4{
+    position:absolute;
+    bottom: 110px;
+    left: 80px;
+    text-align: left;
+    color: white;
+    font-size:0.7em;
+    font-weight:bold;
 }
 .border-box{
     height:100%;
@@ -126,7 +165,8 @@ td{
     border: 0px solid white;
     box-sizing: border-box;
     transition: border 0.25s;
-    z-index: 1;    
+    z-index: 1;   
+    border-spacing: 0;
 }
 .box:hover img{
     opacity: 0.3;
@@ -134,24 +174,60 @@ td{
 .box:hover .border-box{
     border: 30px solid white;
 }
-#ice_cream{
-    position:relative;
-    top:-400px;
-    left:550px;
-}
-#strawberries{
-    position:relative;
-    top:-400px;
-    left:0px;
-}
-#workspace{
-    position:relative;
-    top:-800px;
-    left: 550px;
-}
 #portfolio_animation{
+    padding-top:30px;
     padding-left:200px;
-    padding-top:50px;
+    border-spacing: 0;
 }
-
-
+#portfolio_animation td{
+    padding:0;
+    line-height:35px;
+    margin:0;
+}
+#section-6{
+    height:45%;
+    width:100%;
+    background-color:#1d809f;
+    color:white;
+    text-align:center;
+}
+#section-6 h2{
+    padding-top:100px;
+}
+#map{
+    height:65%;
+    width:100%;
+}
+footer{
+    position:relative;
+    height:40%;
+    width:100%;
+    text-align:center;
+    font-size:0.75em;
+    font-weight: 50px;
+}
+footer table{
+    margin:0;
+    padding-top:75px;
+    padding-left:600px;
+}
+footer td{
+    margin:0;
+    padding: 15px;
+    line-height:60px;
+}
+#facebook{
+    position:absolute;
+    top:91px;
+    left:640px;
+}
+#twitter{
+    position:absolute;
+    top:91px;
+    left:728px;
+}
+#github{
+    position:absolute;
+    top:91px;
+    left:820px;
+}

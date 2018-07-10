@@ -6,8 +6,10 @@
   <title>Project 1</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
   <link rel="stylesheet" href="bootstrap.css" />
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
 </head>
 
 <body>
@@ -27,18 +29,32 @@
       <table id="service-icons">
         <tr>
             <td>
-                <image src="Responsive.PNG" height="140" width="140" alt="Responsive" />
+                <div class="circle circle-1"></div>
+                <span style= "font-size:2em;color:#1d809f;" id="responsive">
+                    <i class="fas fa-mobile-alt"></i>            
+                </span>
             </td>
             <td>
-                <image src="Redesigned.PNG" height="140" width="140" alt="Redesigned" />
+                <div class="circle circle-1"></div>
+                <span style= "font-size:2em;color:#1d809f;" id="redesigned">
+                    <i class="fas fa-pencil-alt"></i>        
+                </span>
             </td>
             <td>
-                <image src="Favorited.PNG" height="140" width="140" alt="Favorited" />
+                <div class="circle circle-1"></div>
+                <span style= "font-size:2em;color:#1d809f;" id="favorited">
+                  <i class="fas fa-thumbs-up"></i>       
+                </span>
             </td>
             <td>
-                <image src="Question.PNG" height="140" width="140" alt="Question" />
+                <div class="circle circle-1"></div>
+                <span style= "font-size:2em;color:#1d809f;" id="question">
+                  <i class="fas fa-question"></i>            
+                </span>
             </td>
         </tr>
+      </table>
+      <table>
         <tr>
                 <td>
                     <h4>Responsive</h4>
@@ -66,27 +82,77 @@
   <div id="section-5">
       <h6>PORTFOLIO</h6>
       <h2>Recent Projects</h2>
-      <div id="portfolio_animation">
-        <div class="box" id="stationary">
-            <div class="border-box"></div>
-            <img src="https://blackrockdigital.github.io/startbootstrap-stylish-portfolio/img/portfolio-1.jpg" />
-            <h5>STATIONARY<br>A yellow pencil with envelopes on a clean, blue backdrop!</h5>
-        </div>
-        <div class="box" id="ice_cream">
-            <div class="border-box"></div>
-            <img src="https://blackrockdigital.github.io/startbootstrap-stylish-portfolio/img/portfolio-2.jpg" />
-            <h5>ICE CREAM<br>A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</h5>
-        </div>
-        <div class="box" id="strawberries">
-            <div class="border-box"></div>
-            <img src="https://blackrockdigital.github.io/startbootstrap-stylish-portfolio/img/portfolio-3.jpg" />
-            <h5>STRAWBERRIES<br>Strawberries are such a tasty snack, especially with a little sugar on top!</h5>
-        </div> 
-        <div class="box" id="workspace">
-            <div class="border-box"></div>
-            <img src="https://blackrockdigital.github.io/startbootstrap-stylish-portfolio/img/portfolio-4.jpg" />
-            <h5>WORKSPACE<br>A yellow workspace with some scissors, pencils, and other objects.</h5>
-        </div>   
-      </div>        
+      <table id="portfolio_animation">
+          <tr>
+              <td>
+                <div class="box" id="stationary">
+                  <div class="border-box"></div>
+                  <img src="https://blackrockdigital.github.io/startbootstrap-stylish-portfolio/img/portfolio-1.jpg" />
+                  <h4>STATIONARY</h4>
+                  <h5>A yellow pencil with envelopes on a clean, blue <br>backdrop!</h5> 
+                </div>
+              </td>
+              <td>
+                <div class="box" id="ice_cream">
+                  <div class="border-box"></div>
+                  <img src="https://blackrockdigital.github.io/startbootstrap-stylish-portfolio/img/portfolio-2.jpg" />
+                  <h4>ICE CREAM</h4>
+                  <h5>A dark blue background with a colored pencil, a <br>clip, and a tiny ice cream cone!</h5>
+                </div>
+              </td>
+          <tr>
+              <td>
+                <div class="box" id="strawberries">
+                    <div class="border-box"></div>
+                    <img src="https://blackrockdigital.github.io/startbootstrap-stylish-portfolio/img/portfolio-3.jpg" />
+                    <h4>STRAWBERRIES</h4>
+                    <h5>Strawberries are such a tasty snack, especially with <br>a little sugar on top!</h5>
+                </div> 
+              </td>
+              <td>
+                <div class="box" id="workspace">
+                    <div class="border-box"></div>
+                    <img src="https://blackrockdigital.github.io/startbootstrap-stylish-portfolio/img/portfolio-4.jpg" />
+                    <h4><b>WORKSPACE</b></h4>
+                    <h5>A yellow workspace with some scissors, pencils, <br>and other objects.</h5>
+                </div>
+              </td> 
+          </tr>
+      </table>
+  </div>
+  <div id="section-6">
+      <h2>The buttons below are impossible to resist...</h2>
+      <button class="btn btn-click">Click Me!</button>
+      <button class="btn btn-offer">Look at Me!</button>
+  </div>
+  <div id="map"></div>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDh5MXryJ4wMV6TNFc3fTdnXGXmuSz8UDQ&callback=initMap"></script>
   </body>
+  <footer>
+      <table>
+          <tr>
+              <td>
+                <div class="circle circle-2"></div>
+                <span style= "font-size:1.5em;color:white;" id="facebook">
+                  <i class="fab fa-facebook-f"></i>      
+                </span>    
+              </td>
+              <td>
+                <div class="circle circle-2"></div>
+                <span style= "font-size:1.5em;color:white;" id="twitter">
+                  <i class="fab fa-twitter"></i>        
+                </span>
+              </td>
+              <td>
+                <div class="circle circle-2"></div>
+                <span style= "font-size:1.5em;color:white;" id="github">
+                  <i class="fab fa-github"></i>        
+                </span>
+              </td>
+          </tr>
+          <tr>
+              <td colspan="3">Copyright © Your Website 2017</td>
+          </tr>
+      </table>
+  </footer>
 </html>
