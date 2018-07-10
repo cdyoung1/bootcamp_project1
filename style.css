@@ -84,7 +84,7 @@ td{
     font-size:2.75em;
 }
 #section-5{
-    height:150%;
+    height:100%;
     width:100%;
     text-align: center;
 }
@@ -118,21 +118,40 @@ td{
     color: white;
 }
 .border-box{
-    position:absolute;
     height:100%;
     width:100%;
+    position:absolute;    
     top:0;
     left:0;
     border: 0px solid white;
     box-sizing: border-box;
-    z-index: 1;
     transition: border 0.25s;
-}
-.box:hover .border-box{
-    border: 30px white;
+    z-index: 1;    
 }
 .box:hover img{
     opacity: 0.3;
+}
+.box:hover .border-box{
+    border: 30px solid white;
+}
+#ice_cream{
+    position:relative;
+    top:-400px;
+    left:550px;
+}
+#strawberries{
+    position:relative;
+    top:-400px;
+    left:0px;
+}
+#workspace{
+    position:relative;
+    top:-800px;
+    left: 550px;
+}
+#portfolio_animation{
+    padding-left:200px;
+    padding-top:50px;
 }
 
 
