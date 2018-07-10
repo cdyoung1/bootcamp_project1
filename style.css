@@ -2,9 +2,11 @@ html , body {
     height:100%;
     width:100%;
     margin: 0;
+    font-family: 'Source Sans Pro';
+    font-size:20px;
+    color: #212529;
 }
 #section-1{
-    font-family: 'Source Sans Pro';
     background-color: #f3bf1d;
     background-image:url(https://blackrockdigital.github.io/startbootstrap-stylish-portfolio/img/bg-masthead.jpg);
     background-size:cover;
@@ -13,7 +15,124 @@ html , body {
     width:100%; 
     text-align: center;
 }
+#section-2{
+    background-color: #f8f9fa;
+    height:55%;
+    width:100%;
+    text-align: center;
+}
 h1{
     margin:0;
-    padding-top: 300px;
+    padding-top: 250px;
+    font-size: 4em;
 }
+h3{
+    font-size:25px;
+}
+#section-2 h1{
+    font-size:2em;
+    padding-top: 110px;
+}
+#section-2 h3{
+    font-size: 1em;
+    font-weight:normal;
+}
+#section-3{
+    background-color: #1d809f;
+    height:70%;
+    width:100%; 
+    text-align: center;
+    color:white;
+}
+#section-3 h2{
+    font-size:2.5em;
+    line-height:0;
+}
+#section-3 h6{
+    font-size:0.8em;
+    padding-top:80px;
+    margin:0;
+    color:#ecb807!important;
+    line-height: 0;
+}
+#section-3 h4{
+    font-size:1.2em;
+    padding:0;
+    color:white;
+}
+#section-3 h5{
+    font-size:0.8em;
+    padding:0;
+    color:rgba(255,255,255,.7);
+    font-weight:normal;
+}
+td{
+    padding: 10px 0px 10px 125px;
+    line-height: 0;
+}
+#section-4{
+    background-image:url(https://blackrockdigital.github.io/startbootstrap-stylish-portfolio/img/bg-callout.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    opacity:0.92;
+    height:100%;
+    width:100%;
+    text-align:center;
+}
+#section-4 h1{
+    padding-top: 280px;
+    font-size:2.75em;
+}
+#section-5{
+    height:150%;
+    width:100%;
+    text-align: center;
+}
+#section-5 h2{
+    font-size:2.5em;
+    line-height:0;      
+}
+#section-5 h6{
+    font-size:0.8em;
+    padding-top:80px;
+    margin:0;
+    color:#ecb807!important;
+    line-height: 0;
+}
+.box{
+    background: #1d809f;
+    height: 400px;
+    width:550px;
+    position: relative;
+    overflow: hidden;
+}
+.box img{
+    position:relative;
+    transition: opacity 0.75s;
+}
+.box h5{
+    position:absolute;
+    bottom: 40px;
+    left: 60px;
+    text-align: left;
+    color: white;
+}
+.border-box{
+    position:absolute;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    border: 0px solid white;
+    box-sizing: border-box;
+    z-index: 1;
+    transition: border 0.25s;
+}
+.box:hover .border-box{
+    border: 30px white;
+}
+.box:hover img{
+    opacity: 0.3;
+}
+
+
