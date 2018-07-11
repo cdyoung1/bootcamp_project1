@@ -14,9 +14,11 @@
 
 <body>
   <div id="section-1" class="text-center">
-      <h1>Stylish Portfolio</h1>
-      <h3><em>A Free Bootstrap Theme by Start Bootstrap</em></h3>
-      <button class="btn btn-info">Find Out More</button>
+      <div id="heading" class="text-center">
+        <h1>Stylish Portfolio</h1>
+        <p><em>A Free Bootstrap Theme by Start Bootstrap</em></p>
+        <button class="btn btn-info">Find Out More</button>
+      </div>
   </div>
 
   <div id="section-2" class="text-center">
@@ -58,84 +60,79 @@
         <p>I mustache you a question...</p>                              
       </div>
   </div>
-  <div id="section-4">
+  <div id="section-4" class="text-center">
+    <div id="heading-2">  
       <h1>Welcome to <em>your</em><br>next website!</h1>
-      <button class="btn btn-info">Download Now!</button>
+        <button class="btn btn-info">Download Now!</button>
+    </div>
   </div>
-  <div id="section-5">
-      <h6>PORTFOLIO</h6>
-      <h2>Recent Projects</h2>
-      <table id="portfolio_animation">
-          <tr>
-              <td>
-                <div class="box" id="stationary">
-                  <div class="border-box"></div>
-                  <img src="https://blackrockdigital.github.io/startbootstrap-stylish-portfolio/img/portfolio-1.jpg" />
-                  <h4>STATIONARY</h4>
-                  <h5>A yellow pencil with envelopes on a clean, blue <br>backdrop!</h5> 
-                </div>
-              </td>
-              <td>
-                <div class="box" id="ice_cream">
-                  <div class="border-box"></div>
-                  <img src="https://blackrockdigital.github.io/startbootstrap-stylish-portfolio/img/portfolio-2.jpg" />
-                  <h4>ICE CREAM</h4>
-                  <h5>A dark blue background with a colored pencil, a <br>clip, and a tiny ice cream cone!</h5>
-                </div>
-              </td>
-          <tr>
-              <td>
-                <div class="box" id="strawberries">
-                    <div class="border-box"></div>
-                    <img src="https://blackrockdigital.github.io/startbootstrap-stylish-portfolio/img/portfolio-3.jpg" />
-                    <h4>STRAWBERRIES</h4>
-                    <h5>Strawberries are such a tasty snack, especially with <br>a little sugar on top!</h5>
-                </div> 
-              </td>
-              <td>
-                <div class="box" id="workspace">
-                    <div class="border-box"></div>
-                    <img src="https://blackrockdigital.github.io/startbootstrap-stylish-portfolio/img/portfolio-4.jpg" />
-                    <h4><b>WORKSPACE</b></h4>
-                    <h5>A yellow workspace with some scissors, pencils, <br>and other objects.</h5>
-                </div>
-              </td> 
-          </tr>
-      </table>
+  <div id="section-5" class="text-center">
+    <div id="box-container">
+        <h6>PORTFOLIO</h6>
+        <h2>Recent Projects</h2>
+        <div class="box">
+          <div class="border-box text-position"></div>
+          <img src="https://blackrockdigital.github.io/startbootstrap-stylish-portfolio/img/portfolio-1.jpg" />
+          <div class="caption">
+            <h5>STATIONARY</h5>
+            <p>A yellow pencil with envelopes on a clean,blue backdrop!</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="border-box"></div>
+          <img src="https://blackrockdigital.github.io/startbootstrap-stylish-portfolio/img/portfolio-2.jpg" />
+          <div class="caption">
+            <h5>ICE CREAM</h5>
+            <p>A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="border-box"></div>
+          <img src="https://blackrockdigital.github.io/startbootstrap-stylish-portfolio/img/portfolio-3.jpg" />
+          <div class="caption">
+          <h5>STRAWBERRIES</h5>
+          <p>Strawberries are such a tasty snack, especially with a little sugar on top!</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="border-box"></div>
+          <img src="https://blackrockdigital.github.io/startbootstrap-stylish-portfolio/img/portfolio-4.jpg" />
+          <div class="caption">
+          <h5>WORKSPACE</h5>
+          <p>A yellow workspace with some scissors, pencils, and other objects.</p>
+          </div>
+        </div>
+    </div>
   </div>
   <div id="section-6">
       <h2>The buttons below are impossible to resist...</h2>
       <button class="btn btn-click">Click Me!</button>
-      <button class="btn btn-offer">Look at Me!</button>
+      <button class="btn btn-black">Look at Me!</button>
   </div>
   <div id="map"></div>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDh5MXryJ4wMV6TNFc3fTdnXGXmuSz8UDQ&callback=initMap"></script>
   </body>
-  <footer>
-      <table>
-          <tr>
-              <td>
-                <div class="circle circle-2"></div>
-                <span style= "font-size:1.5em;color:white;" id="facebook">
-                  <i class="fab fa-facebook-f"></i>      
-                </span>    
-              </td>
-              <td>
-                <div class="circle circle-2"></div>
-                <span style= "font-size:1.5em;color:white;" id="twitter">
-                  <i class="fab fa-twitter"></i>        
-                </span>
-              </td>
-              <td>
-                <div class="circle circle-2"></div>
-                <span style= "font-size:1.5em;color:white;" id="github">
-                  <i class="fab fa-github"></i>        
-                </span>
-              </td>
-          </tr>
-          <tr>
-              <td colspan="3">Copyright © Your Website 2017</td>
-          </tr>
-      </table>
+  <footer class="text-center">
+    <div id="social-media">
+      <div class="footer-container text-center">
+        <div class="circle-2 ">
+            <i class="fab fa-facebook-f"></i>
+        </div>
+      </div>
+      <div class="footer-container text-center">
+        <div class="circle-2 ">
+            <i class="fab fa-twitter"></i>
+        </div>
+      </div>
+      <div class="footer-container text-center">
+        <div class="circle-2 ">
+            <i class="fab fa-github"></i>
+        </div>            
+      </div>
+      <h6>Copyright © Your Website 2017</h6>
+    </div>
   </footer>
 </html>

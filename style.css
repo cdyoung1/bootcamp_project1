@@ -10,13 +10,26 @@ html , body {
     background-image:url(https://blackrockdigital.github.io/startbootstrap-stylish-portfolio/img/bg-masthead.jpg);
     background-size:cover;
     background-repeat: no-repeat;
-    height:100%;
-    width:100%; 
+    min-height:100%;
+    min-width:100%; 
+    height:auto;
+    width:auto;
+    background-position: center center;
 }
-
-h1{
+#heading{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#section-1 h1{
     margin:0;
-    padding-top: 300px;
+    font-size:5rem;
+
+}
+#section-1 p{
+    font-size:2rem;
+    font-weight:700;
 }
 h3{
     font-size:25px;
@@ -34,6 +47,7 @@ h3{
     font-weight:normal;
 }
 #section-3{
+    position:relative;
     background-color: #1d809f;
     color:white;
     padding: 100px 0;
@@ -66,71 +80,96 @@ h3{
     line-height: 0px;
 }
 #section-3 h6{
-    font-size:0.8em;
+    font-size:1em;
     margin:0;
     color:#ecb807!important;
     line-height: 0px;
 }
 
 #section-4{
+    position:relative;
     background-image:url(https://blackrockdigital.github.io/startbootstrap-stylish-portfolio/img/bg-callout.jpg);
     background-size:cover;
     background-repeat:no-repeat;
     opacity:0.92;
-    height:100%;
-    width:100%;
-    text-align:center;
+    min-height:75%;
+    min-width:100%; 
+    height:auto;
+    width:auto;
+    background-position: center center;
+}
+#heading-2{
+    position:absolute;
+    bottom: 33.33%;
+    left:50%;
+    transform: translateX(-50%);
 }
 #section-4 h1{
+    margin:0;
     padding-top: 280px;
     font-size:2.75em;
 }
 #section-5{
-    height:140%;
-    width:100%;
-    text-align: center;
-    margin:0;
-    border-spacing: 0;
+    background:white;
+    font-size:16px;
+    margin:50px 0px;
+    line-height:0;
+}
+#box-container{
+    font-size:0;
 }
 #section-5 h2{
-    font-size:2.5em;
-    line-height:0;      
+    font-size:40px;
+    line-height:0; 
 }
 #section-5 h6{
-    font-size:0.8em;
-    padding-top:80px;
+    font-size:17.5px;
     margin:0;
     color:#ecb807!important;
     line-height: 0;
 }
 .box{
+    font-size: 16px;
     background: #1d809f;
-    height: 400px;
-    width:550px;
+    height: auto;
+    max-width: 100%;
+    width:auto;
     position: relative;
     overflow: hidden;
+    display: inline-block;
+}
+@media screen and (max-width: 1400px){
+    .box{
+        margin:5px;
+    }
 }
 .box img{
+    height:auto;
+    max-width:100%;
     position:relative;
     transition: opacity 0.75s;
 }
-.box h5{
+.caption{
+    width:90%;
     position:absolute;
-    bottom: 30px;
-    left: 80px;
-    text-align: left;
+    bottom: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align:left;
+    line-height:0em;
+    margin: 0px 0px;
+}
+.box h5{
     color: white;
     font-size:1em;
-    font-weight:100;
-}
-.box h4{
-    position:absolute;
-    bottom: 110px;
-    left: 80px;
-    text-align: left;
-    color: white;
-    font-size:0.7em;
     font-weight:bold;
+}
+.box p{
+    color:white;
+    font-size:1.2em;
+    font-weight:50px;
+    display:inline-block;
+    line-height:1em;
 }
 .border-box{
     height:100%;
@@ -142,23 +181,12 @@ h3{
     box-sizing: border-box;
     transition: border 0.25s;
     z-index: 1;   
-    border-spacing: 0;
 }
 .box:hover img{
     opacity: 0.3;
 }
 .box:hover .border-box{
     border: 30px solid white;
-}
-#portfolio_animation{
-    padding-top:30px;
-    padding-left:400px;
-    border-spacing: 0;
-}
-#portfolio_animation td{
-    padding:0;
-    line-height:35px;
-    margin:0;
 }
 #section-6{
     height:45%;
@@ -176,34 +204,34 @@ h3{
 }
 footer{
     position:relative;
+    background:white;
+    color:#1d809f;
     height:40%;
     width:100%;
-    text-align:center;
-    font-size:0.75em;
-    font-weight: 50px;
 }
-footer table{
-    margin:0;
-    padding-top:75px;
-    padding-left:600px;
+.footer-container{
+    width:100px;
+    color:white;
+    display:inline-block;
+    margin:0px;
+    padding-bottom: 30px;
 }
-footer td{
-    margin:0;
-    padding: 15px;
-    line-height:60px;
+.circle-2{
+    width: 64px;
+    height: 64px;
+    border-radius:100%;
+    background: #1d809f;
+    display: inline-block;
+    margin: 0 auto;
+    color: white;   
 }
-#facebook{
-    position:absolute;
-    top:91px;
-    left:640px;
+.circle-2 i{
+    font-size: 35px;
+    padding-top: 15px;
 }
-#twitter{
-    position:absolute;
-    top:91px;
-    left:728px;
-}
-#github{
-    position:absolute;
-    top:91px;
-    left:820px;
+#social-media{
+    position:relative;
+    top:25%;
+    left:50%;
+    transform: translateX(-50%);
 }

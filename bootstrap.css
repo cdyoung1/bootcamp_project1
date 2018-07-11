@@ -21,11 +21,11 @@
     background-color:#343a40;
     color:white;
 }
-.btn-click{
+.btn-click{ 
     background-color:#f8f9fa;
-    color:#1d809f;
+    color:#343a40;
 }
-.btn-offer:hover{
+.btn-black:hover{
     background-color:#262626;
 }
 .btn-click:hover{
@@ -36,14 +36,4 @@
     border-radius:100%;
     display: inline-block;
 
-}
-.circle-1{
-    background-color: white;
-    height:125px;
-    width:125px;
-}
-.circle-2{
-    background-color:#1d809f;
-    height:60px;
-    width:60px;
 }
