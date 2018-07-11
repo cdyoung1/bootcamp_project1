@@ -3,35 +3,31 @@ html , body {
     width:100%;
     margin: 0;
     font-family: 'Source Sans Pro';
-    font-size:20px;
-    color: #212529;
 }
 #section-1{
+    position:relative;
     background-color: #f3bf1d;
     background-image:url(https://blackrockdigital.github.io/startbootstrap-stylish-portfolio/img/bg-masthead.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     height:100%;
     width:100%; 
-    text-align: center;
 }
-#section-2{
-    background-color: #f8f9fa;
-    height:55%;
-    width:100%;
-    text-align: center;
-}
+
 h1{
     margin:0;
-    padding-top: 250px;
-    font-size: 4em;
+    padding-top: 300px;
 }
 h3{
     font-size:25px;
 }
+#section-2{
+    background-color: white;
+    margin:100px 0px;
+    padding: 0% 10%;
+}
 #section-2 h1{
     font-size:2em;
-    padding-top: 110px;
 }
 #section-2 h3{
     font-size: 1em;
@@ -39,63 +35,43 @@ h3{
 }
 #section-3{
     background-color: #1d809f;
-    height:70%;
-    width:100%; 
-    text-align: center;
     color:white;
-    position:relative;
+    padding: 100px 0;
 }
-
+.icon-container{
+    width:250px;
+    color:white;
+    display: inline-block;
+    margin:20px;
+    padding: 10px;
+}
+.icon-container h4{
+    font-size: 25px;
+}
+.circle{
+    width: 112px;
+    height: 112px;
+    border-radius:100%;
+    background: white;
+    margin: 0 auto;
+    display: inline-block;
+    color: #1d809f;
+}
+.circle i{
+    font-size: 50px;
+    padding-top: 30px;
+}
 #section-3 h2{
     font-size:2.5em;
-    line-height:0px;
+    line-height: 0px;
 }
 #section-3 h6{
     font-size:0.8em;
-    padding-top:80px;
     margin:0;
     color:#ecb807!important;
-    line-height: 0;
+    line-height: 0px;
 }
-#section-3 h4{
-    font-size:1.2em;
-    padding:0;
-    color:white;
-}
-#section-3 h5{
-    font-size:0.8em;
-    padding:0;
-    color:rgba(255,255,255,.7);
-    font-weight:normal;
-}
-td{
-    padding: 10px 0px 10px 125px;
-    line-height: 0;
-}
-#service-icons td{
-    padding:30px 45px 0px 170px;
 
-}
-#responsive{
-    position:absolute;
-    top:238px;
-    left:220px;
-}
-#redesigned{
-    position:absolute;
-    top:238px;
-    left:554px;
-}
-#favorited{
-    position:absolute;
-    top:238px;
-    left:894px;
-}
-#question{
-    position:absolute;
-    top:238px;
-    left:1242px;
-}
 #section-4{
     background-image:url(https://blackrockdigital.github.io/startbootstrap-stylish-portfolio/img/bg-callout.jpg);
     background-size:cover;
@@ -176,7 +152,7 @@ td{
 }
 #portfolio_animation{
     padding-top:30px;
-    padding-left:200px;
+    padding-left:400px;
     border-spacing: 0;
 }
 #portfolio_animation td{

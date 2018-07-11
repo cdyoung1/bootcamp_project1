@@ -1,7 +1,11 @@
+.text-center{
+    text-align:center;
+
+}
 .btn{
-    font-size: 16px;
-    border-radius: 4px;
-    padding: 20px 30px;
+    font-size: 14px;
+    border-radius: 6px;
+    padding: 20px;
     border: none;
     font-weight: bold;
     transition: 0.3s;
@@ -13,7 +17,7 @@
 .btn:hover{
     background-color:#15495a;    
 }
-.btn-offer{
+.btn-black{
     background-color:#343a40;
     color:white;
 }
@@ -29,7 +33,9 @@
 }
 
 .circle{
-    border-radius:50%;
+    border-radius:100%;
+    display: inline-block;
+
 }
 .circle-1{
     background-color: white;
