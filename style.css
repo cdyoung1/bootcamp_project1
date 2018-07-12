@@ -4,6 +4,73 @@ html , body {
     margin: 0;
     font-family: 'Source Sans Pro';
 }
+#nav{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    background:black;
+    color:white;
+    z-index:2;  
+    border:1px solid white;
+}
+#nav-button{
+    position:relative;
+    font-size:20px;
+    border-radius:5px;
+    padding:10px;
+    float:right;
+    display:none;
+    z-index:3;
+}
+nav h3{
+    position:absolute;
+    margin:0;
+    top:6.5px;
+    left:15px;
+    font-size:1.25em;
+    font-weight:normal;
+    z-index:3;
+}
+#nav-list{
+    position:relative;
+    background:black;
+    list-style-type:none;
+    margin:0;
+    float:right;
+}
+#nav-list li{
+    display:inline-block;
+    padding:10px 20px 10px 0px;
+    margin:0;
+    cursor:pointer;
+}
+@media screen and (max-width:800px){
+    #nav-button{
+        display:block;
+        z-index:3;
+    } 
+    .test:hover #nav-list{
+        display:block;
+        padding-top:40px;
+    }  
+    #nav-list{
+        position:absolute;
+        display:none;
+        width:100%;
+        padding:0;
+        margin:0;
+    }
+
+    #nav-list li{
+        display:block;
+        padding-left:15px;
+    }
+    li:hover{
+        background: #212121;
+    }
+
+}
 #section-1{
     position:relative;
     background-color: #f3bf1d;
@@ -24,8 +91,8 @@ html , body {
 }
 #section-1 h1{
     margin:0;
-    font-size:5rem;
-
+    font-size:4.5rem;
+    line-height:1em;
 }
 #section-1 p{
     font-size:2rem;
@@ -84,6 +151,9 @@ h3{
     margin:0;
     color:#ecb807!important;
     line-height: 0px;
+}
+#row1 , #row2 {
+    display:inline-block;
 }
 
 #section-4{
@@ -189,14 +259,22 @@ h3{
     border: 30px solid white;
 }
 #section-6{
-    height:45%;
-    width:100%;
+    position:relative;
+    min-height:40%;
+    min-width:100%;
+    height:auto;
+    width:auto;
     background-color:#1d809f;
     color:white;
     text-align:center;
 }
-#section-6 h2{
-    padding-top:100px;
+#section-6-container{
+    position:absolute;
+    top:25%;
+    left:50%;
+    transform: translateX(-50%);
+    height:100%;
+    width:100%;
 }
 #map{
     height:65%;
