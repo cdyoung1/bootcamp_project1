@@ -9,10 +9,9 @@ html , body {
     top:0;
     left:0;
     right:0;
-    background:black;
+    background:#232426;
     color:white;
     z-index:2;  
-    border:1px solid white;
 }
 #nav-button{
     position:relative;
@@ -34,7 +33,7 @@ nav h3{
 }
 #nav-list{
     position:relative;
-    background:black;
+    background:#232426;
     list-style-type:none;
     margin:0;
     float:right;
@@ -65,29 +64,38 @@ nav h3{
     #nav-list li{
         display:block;
         padding-left:15px;
+        width:100%;
     }
     li:hover{
-        background: #212121;
+        background: #2e2f31;
+    }
+    a{
+        width:100%;
     }
 
 }
 #section-1{
     position:relative;
-    background-color: #f3bf1d;
-    background-image:url(https://blackrockdigital.github.io/startbootstrap-stylish-portfolio/img/bg-masthead.jpg);
+    background-image:url(https://images.pexels.com/photos/262669/pexels-photo-262669.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
     background-size:cover;
     background-repeat: no-repeat;
-    min-height:100%;
-    min-width:100%; 
-    height:auto;
-    width:auto;
+    height:100%;
+    width:100%;
     background-position: center center;
+    color:white;
+    box-sizing: border-box;
+}
+@media screen and (max-width:990px){
+    #section-1{
+        height:50%;
+    }
 }
 #heading{
     position: absolute;
-    top: 25%;
+    top: 33.33%;
     left: 50%;
     transform: translateX(-50%);
+    width:100%;
 }
 #section-1 h1{
     margin:0;
@@ -97,6 +105,7 @@ nav h3{
 #section-1 p{
     font-size:2rem;
     font-weight:700;
+    padding:0px 20px;
 }
 h3{
     font-size:25px;
@@ -105,25 +114,62 @@ h3{
     background-color: white;
     padding: 7.5%;
 }
-#section-2 h1{
+#section-2 h2{
     font-size:2em;
 }
-#section-2 h3{
+#section-2 p{
     font-size: 1em;
     font-weight:normal;
+    padding-bottom: 20px;
 }
 #section-3{
     position:relative;
     background-color: #1d809f;
     color:white;
     padding: 100px 0;
+    margin:0;
+    font-size:0;
+    box-sizing: border-box;
+}
+#service-icons{
+    padding: 0px 150px;
 }
 .icon-container{
-    width:250px;
+    font-size:1rem;
+    width:25%;
     color:white;
     display: inline-block;
-    margin:20px;
-    padding: 10px;
+    padding-top: 30px;
+    line-height: 5px;
+    box-sizing: border-box;
+}
+@media screen and (max-width:1350px){
+    .col-md-6{
+        width: 50%;
+    }
+    #responsive, #favorited{
+        padding-left:25px;
+    }
+    #redesigned, #question{
+        padding-right: 25px;
+    }
+}
+@media screen and (max-width:975px){
+    .col-lg-12{
+        width:100%;
+    }
+    #responsive, #favorited{
+        padding-left:0px;
+    }
+    #redesigned, #question{
+        padding-right: 0px;
+    }
+    #service-icons{
+        padding:0px;
+    }
+    .icon-container{
+        box-sizing: unset;
+    }
 }
 .icon-container h4{
     font-size: 25px;
@@ -142,17 +188,14 @@ h3{
     padding-top: 30px;
 }
 #section-3 h2{
-    font-size:2.5em;
+    font-size:2.5rem;
     line-height: 0px;
 }
 #section-3 h6{
-    font-size:1em;
+    font-size:1rem;
     margin:0;
     color:#ecb807!important;
     line-height: 0px;
-}
-#row1 , #row2 {
-    display:inline-block;
 }
 
 #section-4{
@@ -167,11 +210,19 @@ h3{
     width:auto;
     background-position: center center;
 }
+#section-4 h1{
+    padding-bottom: 20px;
+}
 #heading-2{
     position:absolute;
     bottom: 33.33%;
     left:50%;
     transform: translateX(-50%);
+}
+@media screen and (max-width:523px){
+    #heading-2{
+        bottom:25%;
+    }
 }
 #section-4 h1{
     margin:0;
@@ -264,8 +315,11 @@ h3{
     height:auto;
     width:auto;
     background-color:#1d809f;
-    color:white;
     text-align:center;
+}
+#section-6-container h2{
+    color:white;
+    padding-bottom: 20px;
 }
 #section-6-container{
     position:absolute;
@@ -280,9 +334,9 @@ h3{
     width:100%;
 }
 footer{
+    background-image:url(https://images.pexels.com/photos/908283/pexels-photo-908283.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
     position:relative;
-    background:white;
-    color:#1d809f;
+    color:white;
     height:40%;
     width:100%;
 }
@@ -291,16 +345,17 @@ footer{
     color:white;
     display:inline-block;
     margin:0px;
+    padding-top:40px;
     padding-bottom: 30px;
 }
 .circle-2{
     width: 64px;
     height: 64px;
     border-radius:100%;
-    background: #1d809f;
+    background: white;
     display: inline-block;
     margin: 0 auto;
-    color: white;   
+    color: black;   
 }
 .circle-2 i{
     font-size: 35px;

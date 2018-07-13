@@ -15,22 +15,22 @@ a, a:visited{
     transition: 0.3s;
 }
 .btn-info{
-    background-color:#1d809f;
-    color: white;
+    background-color:#2e2f31;
+    color: white!important;
 }
 .btn:hover{
-    background-color:#15495a;    
+    background-color:#232426;    
 }
 .btn-black{
-    background-color:#343a40;
-    color:white;
+    background-color:#2e2f31;
+    color:white!important;
 }
 .btn-click{ 
     background-color:#f8f9fa;
-    color:#343a40;
+    color:#2e2f31;
 }
 .btn-black:hover{
-    background-color:#262626;
+    background-color:#232426;
 }
 .btn-click:hover{
     background-color:#d9d9d9;
