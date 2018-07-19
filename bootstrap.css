@@ -18,7 +18,7 @@ a, a:visited{
     background-color:#2e2f31;
     color: white!important;
 }
-.btn:hover{
+.btn-info:hover{
     background-color:#232426;    
 }
 .btn-black{
@@ -39,5 +39,4 @@ a, a:visited{
 .circle{
     border-radius:100%;
     display: inline-block;
-
 }
